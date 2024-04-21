@@ -9,7 +9,7 @@ public class ExpressionEvaluator {
         System.out.print("Введите арифметическое выражение: ");
         String expression = scanner.nextLine();
         scanner.close();
-        double result = evaluateExpression(expression);
+        double result = foolProofEvaluation(expression);
         System.out.println("Результат выражения: " + result);
     }
     public static double evaluateExpression(String expression) {
